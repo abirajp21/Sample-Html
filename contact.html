@@ -27,7 +27,7 @@
         <main>
             <section id="contactForm">
                 <h1>Our Contact Form</h1>
-                <form action="/" method="put">
+                <form>
                     <fieldset>
                         <legend>Send us A Message</legend>
                         <p>
@@ -38,13 +38,13 @@
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="on">
                         </p>
-                        <label for="Message">Your Message:</label><br>
-                        <Textarea cols="30" rows="8" placeholder="Type Your Message Here" required></Textarea>
+                        <label for="message">Your Message:</label><br>
+                        <Textarea cols="30" rows="8" placeholder="Type Your Message Here" required id="message" name="Message" autocomplete="on"></Textarea>
                     </fieldset>
 
                     <p>
                         
-                        <button type="submit">Submit</button>
+                        <button type="submit" formaction="https://httpbin.org/get" formmethod="get">Submit</button>
                         <button type="reset">Reset</button>
                     </p>
                     
